@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.limpiarEstilos::after {
+.clearStyles::after {
     content: "";
     display: table;
     clear: both;
@@ -19,11 +19,11 @@ body {
     font-weight: 400;
 }
 
-.derecha { float: right; }
-.rojo { color: #FF5049 !important; }
-.rojofocus:focus { border: 1px solid #FF5049 !important; }
+.right { float: right; }
+.red { color: #FF5049 !important; }
+.redFocus:focus { border: 1px solid #FF5049 !important; }
 
-.cabecero {
+.header {
     height: 40vh;
     background-size: cover;
     background-position: center;
@@ -32,12 +32,12 @@ body {
     padding-top: 150px;
     padding-bottom: 100px;
     color: #fff;
-    background: url(fondo.png), #7b4397;
-    background: url(fondo.png), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
-    background: url(fondo.png), linear-gradient(to left, #7b4397, #dc2430)
+    background: url(background.png), #7b4397;
+    background: url(background.png), -webkit-gradient(linear, right top, left top, from(#7b4397), to(#dc2430));
+    background: url(background.png), linear-gradient(to left, #7b4397, #dc2430)
 }
 
-.presupuesto {
+.budget {
     position: absolute;
     width: 350px;
     top: 50%;
@@ -46,14 +46,14 @@ body {
     color: #fff;
 }
 
-.presupuesto_titulo{
+.budget_title {
     font-size: 20px;
     text-align: center;
     margin-bottom: 10px;
     font-weight: 300;
 }
 
-.presupuesto_valor {
+.budget_value {
     font-weight: 300;
     font-size: 46px;
     text-align: center;
@@ -61,37 +61,37 @@ body {
     letter-spacing: 2px;
 }
 
-.presupuesto_ingreso,
-.presupuesto_egreso {
+.budget_income,
+.budget_expense {
     padding: 12px;
     text-transform: uppercase;
 }
 
-.presupuesto_ingreso {
+.budget_income {
     margin-bottom: 10px;
     background-color: #28B9B5;
 }
 
-.presupuesto_egreso {
+.budget_expense {
     background-color: #FF5049;
 }
 
-.presupuesto_ingreso--texto,
-.presupuesto_egreso--texto {
+.budget_income_text,
+.budget_expense_text {
     float: left;
     font-size: 13px;
     color: #fff;
     margin-top: 2px;
 }
 
-.presupuesto_ingreso--valor,
-.presupuesto_egreso--valor {
+.budget_income_value,
+.budget_expense_value {
     letter-spacing: 1px;
     float: left;
 }
 
-.presupuesto_ingreso--porcentaje,
-.presupuesto_egreso--porcentaje {
+.budget_income_percentage,
+.budget_expense_percentage {
     float: left;
     width: 34px;
     font-size: 11px;
@@ -99,25 +99,24 @@ body {
     margin-left: 10px;
 }
 
-.presupuesto_egreso--porcentaje {
+.budget_expense_percentage {
     background-color: rgba(255, 255, 255, 0.2);
     text-align: center;
     border-radius: 3px;
 }
 
-
-.agregar {
+.add {
     padding: 14px;
     border-bottom: 1px solid #e7e7e7;
     background-color: #f7f7f7;
 }
 
-.agregar_contenedor {
+.add_container {
     margin: 0 auto;
     text-align: center;
 }
 
-.agregar_tipo {
+.add_type {
     width: 55px;
     border: 1px solid #e7e7e7;
     height: 44px;
@@ -129,8 +128,8 @@ body {
     transition: border 0.3s;
 }
 
-.agregar_descripcion,
-.agregar_valor {
+.add_description,
+.add_value {
     border: 1px solid #e7e7e7;
     background-color: #fff;
     color: inherit;
@@ -142,10 +141,10 @@ body {
     transition: border 0.3s;
 }
 
-.agregar_descripcion { width: 400px;}
-.agregar_valor { width: 100px;}
+.add_description { width: 400px;}
+.add_value { width: 100px;}
 
-.agregar_btn {
+.add_btn {
     font-size: 35px;
     background: none;
     border: none;
@@ -157,29 +156,29 @@ body {
     margin-left: 10px;
 }
 
-.agregar_btn:active { transform: translateY(2px); }
+.add_btn:active { transform: translateY(2px); }
 
-.agregar_tipo:focus,
-.agregar_descripcion:focus,
-.agregar_valor:focus {
+.add_type:focus,
+.add_description:focus,
+.add_value:focus {
     outline: none;
     border: 1px solid #28B9B5;
 }
 
-.agregar_btn:focus { outline: none; }
+.add_btn:focus { outline: none; }
 
-.contenedor {
+.container {
     width: 860px;
     margin: 60px auto;
 }
 
-.ingreso {
+.income {
     float: left;
     width: 370px;
     margin-right: 70px;
 }
 
-.egreso {
+.expense {
     float: left;
     width: 370px;
 }
@@ -191,27 +190,27 @@ h2 {
     margin-bottom: 15px;
 }
 
-.ingreso_titulo { color: #28B9B5; }
-.egreso_titulo { color: #FF5049; }
+.income_title { color: #28B9B5; }
+.expense_title { color: #FF5049; }
 
-.elemento {
+.item {
     padding: 13px;
     border-bottom: 1px solid #e7e7e7;
 }
 
-.elemento:first-child { border-top: 1px solid #e7e7e7; }
-.elemento:nth-child(even) { background-color: #f7f7f7; }
+.item:first-child { border-top: 1px solid #e7e7e7; }
+.item:nth-child(even) { background-color: #f7f7f7; }
 
-.elemento_descripcion {
+.item_description {
     float: left;
 }
 
-.elemento_valor {
+.item_value {
     float: left;
     transition: transform 0.3s;
 }
 
-.elemento_porcentaje {
+.item_percentage {
     float: left;
     margin-left: 20px;
     transition: transform 0.3s;
@@ -223,23 +222,22 @@ h2 {
     text-align: center;
 }
 
-.ingreso .elemento_valor,
-.ingreso .elemento_eliminar--btn {
+.income .item_value,
+.income .item_delete--btn {
     color: #28B9B5;
 }
 
-.egreso .elemento_valor,
-.egreso .elemento_porcentaje,
-.egreso .elemento_eliminar--btn {
+.expense .item_value,
+.expense .item_percentage,
+.expense .item_delete--btn {
     color: #FF5049;
 }
 
-
-.elemento_eliminar {
+.item_delete {
     float: left;
 }
 
-.elemento_eliminar--btn {
+.item_delete--btn {
     font-size: 22px;
     background: none;
     border: none;
@@ -250,9 +248,9 @@ h2 {
     display: none;
 }
 
-.elemento_eliminar--btn:focus { outline: none; }
-.elemento_eliminar--btn:active { transform: translateY(2px); }
+.item_delete--btn:focus { outline: none; }
+.item_delete--btn:active { transform: translateY(2px); }
 
-.elemento:hover .elemento_eliminar--btn { display: block; }
-.elemento:hover .elemento_valor { transform: translateX(-20px); }
-.elemento:hover .elemento_porcentaje { transform: translateX(-20px); }
+.item:hover .item_delete--btn { display: block; }
+.item:hover .item_value { transform: translateX(-20px); }
+.item:hover .item_percentage { transform: translateX(-20px); }

@@ -23,7 +23,7 @@ To run this project, you need:
 
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/your-username/budget-app](https://github.com/TheWadjet-dev/Budget-App.git
+    git clone https://github.com/TheWadjet-dev/Budget-App.git
     cd budget-app
     ```
 

@@ -39,4 +39,4 @@ jobs:
           docker pull thewadjet/budget-app:latest
           docker stop budget-app || true
           docker rm budget-app || true
-          docker run -d --name budget-app -p 5454:5454 thewadjet/budget-app:latest
+          docker run -d --name budget-app -p 3000:3000 thewadjet/budget-app:latest
